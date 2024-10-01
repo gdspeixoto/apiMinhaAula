@@ -2,14 +2,14 @@
     "version": 2,
     "builds":[
         {
-            "src":"./index.py",
+            "src":"index.py",
             "use":"@versel/python"
         }
     ],
     "routes":[
         {
             "src":"/(.*)",
-            "use":"/"
+            "dest":"index.py"
         }
     ]
 }
